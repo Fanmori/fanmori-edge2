@@ -8,10 +8,10 @@
 
 > 🌍 **Censorship Resilience Focus:** Engineered with advanced features optimized for highly restricted network environments (such as Iran). Includes native ISP-optimized clean IP pools (Irancell, MCI, Rightel), intelligent proxy chaining to bypass Deep Packet Inspection (DPI), and adaptive anti-blocking fallback layers.
 
-من ۳ پیش‌فرض (Preset) برای همون خطوط اول کد ورکرتون آماده کردم. بسته به نیازتون، **فقط یکی از این ۳ بلوک رو** کپی کنید و جایگزین خطوط مشابه در ابتدای کدتون بکنید:
+我为你的 Worker 代码的起始部分准备了 3 种预设方案。你可以根据需要，直接复制其中一个代码块，并替换掉你代码开头对应的部分：
 
-### 1. Sub-zero ping mode (for gaming, fast web browsing) 🏓
-Features: Lowest CPU usage, no lag or buffering. Sites open instantly. (Download speed of large files may fluctuate slightly).
+### 1. 极低延迟模式（适用于游戏、高速网页浏览）🏓
+特点：CPU 占用率极低，无卡顿或缓冲，网页秒开。（大文件下载速度可能会有轻微波动）.
 
 ```javascript
 const WS早期数据最大字节 = 2 * 1024, WS早期数据最大头长度 = Math.ceil(WS早期数据最大字节 * 4 / 3) + 4;
@@ -21,8 +21,8 @@ let tcpConcurrency = 1, preloadRaceDial = false;
 ```
 
 ---
-### 2. Speed ​​Mode Off (For Heavy Downloads, Torrents and 4K YouTube) 🚀
-*Features:* Large buffers to fully saturate bandwidth. Ping will be slightly higher (as data is accumulated before being sent) but download speed will be capped.
+### 2. 关闭加速模式（适用于大文件下载、BT 种子及 4K YouTube 视频）🚀
+*特点：* 采用大缓冲区以充分利用带宽。延迟会略有增加（因为数据在发送前会先进行累积），但下载速度将达到上限。
 
 ```javascript
 const WS早期数据最大字节 = 16 * 1024, WS早期数据最大头长度 = Math.ceil(WS早期数据最大字节 * 4 / 3) + 4;
@@ -33,8 +33,8 @@ let tcpConcurrency = 2, preloadRaceDial = false;
 
 ---
 
-### 3. Golden Balance Mode (My recommendation for everyday use) ⚖️
-*Features:* The best combination. It has great ping, handles download speeds well, and produces the least CPU errors.
+### 3. 黄金平衡模式（我推荐的日常使用模式）⚖️
+*特点：* 最佳组合。它拥有出色的延迟表现，下载速度稳定，且产生的 CPU 错误最少。
 ```javascript
 const WS早期数据最大字节 = 4 * 1024, WS早期数据最大头长度 = Math.ceil(WS早期数据最大字节 * 4 / 3) + 4;
 const uploadBundleTarget = 4 * 1024, uploadQueueMaxBytes = 2 * 1024 * 1024, uploadQueueMaxItems = 1024;
