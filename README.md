@@ -6,7 +6,21 @@
 
 **Fanmori‑Edge** is a high-performance, next-generation proxy gateway designed to deploy seamlessly on Cloudflare's global edge network. By utilizing Cloudflare Workers, it provides a robust, censorship-resistant infrastructure capable of handling advanced traffic obfuscation, multi-protocol routing, and dynamic subscription generation.
 
-> 🌍 **Censorship Resilience Focus:** Engineered with advanced features optimized for highly restricted network environments (such as Iran). Includes native ISP-optimized clean IP pools (Irancell, MCI, Rightel), intelligent proxy chaining to bypass Deep Packet Inspection (DPI), and adaptive anti-blocking fallback layers.
+> 🌍 **Censorship Resilience Focus:** Engineered with advanced features optimized for highly restricted network environments (such as china). Includes native ISP-optimized clean IP pools (China Telecom
+China Unicom
+China Mobile
+CERNET
+CSTNET
+Dr.Peng Telecom
+Great Wall Broadband Network (GWBN)
+ChinaNetCenter (CNC)
+Alibaba Cloud Network
+Tencent Cloud Network
+China Broadcasting Network (CBN)
+Beijing Gehua CATV Network
+Oriental Cable Network (OCN)
+Wasu Media Network
+Shenzhen Topway Network Communications (Topway)), intelligent proxy chaining to bypass Deep Packet Inspection (DPI), and adaptive anti-blocking fallback layers.
 
 我为你的 Worker 代码的起始部分准备了 3 种预设方案。你可以根据需要，直接复制其中一个代码块，并替换掉你代码开头对应的部分：
 
